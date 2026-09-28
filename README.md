@@ -1,9 +1,12 @@
 # pcie-playground
 
 ### Notes
-PCI Express (PCIe x2) Interface:
-- PETp0 / PETn0 / PERp0 / PERn0: PCIe Lane 0 transmitter/receiver pairs.
-- REFCLKp0 / REFCLKn0 (Pins 47, 49): PCIe reference clock.
-- PERST0# (Pin 52): PCIe reset.
-- CLKREQ0# (Pin 53): PCIe clock request.
-- PEWake0# (Pin 55): PCIe wake signal.
+- a minimal PCIe x1 link requires only 9 active signal wires (along with power and GND):
+- | Signal Type          | Pins   | Signal Names                |
+  |----------------------|--------|-----------------------------|
+  | Data (Tx)            | 2      | PETp0, PETn0                |
+  | Data (Rx)            | 2      | PERp0, PERn0                |
+  | Clock                | 2      | REFCLKp0, REFCLKn0          |
+  | Control              | 3      | PERST0#, CLKREQ0#, PEWake0# |
+  | Total Active Signals | 9 pins |                             |
+
