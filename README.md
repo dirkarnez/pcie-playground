@@ -10,3 +10,8 @@
   | Control              | 3      | PERST0#, CLKREQ0#, PEWake0# |
   | Total Active Signals | 9 pins |                             |
 
+
+### Verilog
+- [alexforencich/verilog-pci](https://github.com/alexforencich/verilog-pcie) with https://github.com/alexforencich/cocotbext-pcie
+- https://github.com/wyvernSemi/pcievhost
+- https://github.com/enjoy-digital/litepcie
